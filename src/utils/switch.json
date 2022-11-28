@@ -1,0 +1,15 @@
+
+{
+    "type":"BUTTON",
+    "fill" : "#ffffff",
+    "icon": "",
+    "iconStyle": {
+        "width":"22px",
+        "height":"22px",
+        "display":"block"
+    },
+    "fontStyle":{
+        "font-size":"10px"
+    },
+    "text": ""
+}
