@@ -29,7 +29,7 @@ function App() {
           <Route exact path="/style" element={<StyleBoard switchCollection={board} frameSide={frameSide} color={color} setBoard={setBoard}/>} />
           <Route exact path="/preview" element={<ArtworkPreview switchCollection={board} frameSide={frameSide} color={color} setBoard={setBoard}/>} />
         </Routes>
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 }
