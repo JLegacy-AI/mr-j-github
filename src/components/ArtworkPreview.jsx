@@ -1,10 +1,11 @@
 import React from 'react'
 import KeypadContainer from './KeypadContainer';
+import jsxToString from 'jsx-to-string';
 
 function ArtworkPreview(props) {
-    /*
-        Here We want the screenshot of this component
-    */
+
+    console.log(jsxToString(<KeypadContainer switchCollection={props.switchCollection} color={props.color}/>));
+
 
   return (
     <>

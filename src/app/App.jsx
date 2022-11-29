@@ -13,7 +13,7 @@ import ArtworkPreview from "../components/ArtworkPreview";
 
 function App() {
   const [type, setType] = useState('AXES');
-  const [color, setColor] = useState("#fc2345")
+  const [color, setColor] = useState("#000000")
   const [board, setBoard] = useState( [ getSwitches() ])
   const [frameSide, setFrameSide] = useState(["Side"])
 

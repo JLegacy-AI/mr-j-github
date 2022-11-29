@@ -14,7 +14,7 @@ function Keypad(props) {
 
   return (
     <>
-        <div style={{backgroundColor: props.backColor}} className='w-[400px] h-[380px] flex justify-center items-center '>
+        <div style={{backgroundColor: props.backColor}} className='w-[340px] h-[340px] flex justify-center items-center '>
            <div className='min-h-[200px] w-fit grid grid-cols-3 gap-x-12 gap-y-4 content-center'>
             {
                 props.switches.map((s, i) => {

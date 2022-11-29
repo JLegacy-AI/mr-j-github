@@ -32,7 +32,7 @@ function Engraving(props) {
             <div className='h-fit flex justify-center items-center'>
                 <button className='w-fit h-fit py-2 px-4 border hover:shadow-md' onClick={()=> setDesignBox(0)}>Icon And Text</button>
                 <button className='w-fit h-fit py-2 px-4 border hover:shadow-md' onClick={()=> setDesignBox(1)}>Buttons</button>
-                <button className='w-fit h-fit py-2 px-4 border hover:shadow-md' onClick={()=> setDesignBox(2)}>Backlight Color</button>
+                {/* <button className='w-fit h-fit py-2 px-4 border hover:shadow-md' onClick={()=> setDesignBox(2)}>Backlight Color</button> */}
                 <button className='w-fit h-fit py-2 px-4 border hover:shadow-md' onClick={()=> setDesignBox(3)}>Details</button>
             </div>
             { 

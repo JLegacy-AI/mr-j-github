@@ -15,8 +15,26 @@ export const getSwitches = (width=3, height=3, idG=0)=>{
     return swicthArray
 };
 
-export const setIcon = (fileName) => {
-    
+export const setIcon = (board, boardNumber, icon , fileName) => {
+    let newSetup = []
+    for(let i = 0; i<board.length ; i++)
+    {
+        if(i===boardNumber){
+            let newBoard = []
+            for(let j=0 ; j<board[i].length ; j++ ){
+                if(icon.id == board[i][j].id){
+                    const onlyTextSwitch = board[i][j]
+                    newBoard.push({...onlyTextSwitch,...{"icon":fileName}})
+                    continue
+                }
+                newBoard.push(board[i][j])
+            }
+            newSetup.push(newBoard);
+            continue
+        }
+        newSetup.push(board[i])
+    }
+    return newSetup
 }
 
 export const textOnly = (board, boardNumber) => {
