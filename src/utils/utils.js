@@ -22,7 +22,7 @@ export const setIcon = (board, boardNumber, icon , fileName) => {
         if(i===boardNumber){
             let newBoard = []
             for(let j=0 ; j<board[i].length ; j++ ){
-                if(icon.id == board[i][j].id){
+                if(icon.id === board[i][j].id){
                     const onlyTextSwitch = board[i][j]
                     newBoard.push({...onlyTextSwitch,...{"icon":fileName}})
                     continue
@@ -200,7 +200,7 @@ const setSwitchIconSize = (boardSide, size, iconText) => {
     let newBoardDesign = []
     for(let i =0 ; i < boardSide.length ; i++){
         
-        if(boardSide[i].type == "BUTTON" && iconText===0){
+        if(boardSide[i].type === "BUTTON" && iconText===0){
             let newIconStyle = {
                 iconStyle: {
                     width: (size==='M') ? iconSize[1] : iconSize[0],
@@ -210,7 +210,7 @@ const setSwitchIconSize = (boardSide, size, iconText) => {
             newBoardDesign.push({...boardSide[i], ...newIconStyle})
             continue
         }
-        if(boardSide[i].type == "BUTTON" && iconText===1){
+        if(boardSide[i].type === "BUTTON" && iconText===1){
             let newfontStyle = {
                 fontStyle: {
                     "font-size": (size==='M') ? fontSize[1] : fontSize[0],

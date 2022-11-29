@@ -12,9 +12,7 @@ function Product(props) {
 
     useEffect(() => {
         props.setBoard(createDesign(props.switchCollection, frame))
-        return () => {
-            
-        };
+        return () => {}
     }, [frame]);
 
     let frameDesign = ["L9","L12","TT"]

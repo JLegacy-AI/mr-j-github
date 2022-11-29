@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import { Link } from 'react-router-dom'
 import KeypadContainer from './KeypadContainer'
 import IconTextSize from './IconTextSize';
 import IconTextColor from './IconTextColor';

@@ -13,7 +13,7 @@ function Switch(props) {
 
   const getIcon = () => {
     console.log(props.data.icon+"   (*(*(*(*()))))  ");
-    if(props.data.icon == "")
+    if(props.data.icon === "")
       return (
         <>
           <svg style={{...props.data.iconStyle}}  className='' fill={props.data.fill} x="0px" y="0px" viewBox="0 0 50 50">
