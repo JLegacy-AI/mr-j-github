@@ -1,15 +1,10 @@
 
 {
+    "id": null,
     "type":"BUTTON",
-    "fill" : "#ffffff",
-    "icon": "",
-    "iconStyle": {
-        "width":"22px",
-        "height":"22px",
-        "display":"block"
-    },
-    "fontStyle":{
-        "font-size":"10px"
-    },
-    "text": ""
+    "iconType": "none",
+    "style":"TEXT",
+    "fill" : "#808080",
+    "icon": "resources/icons/regular/building.svg",
+    "text": "Light"
 }

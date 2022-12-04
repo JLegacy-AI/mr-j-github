@@ -12,3 +12,13 @@
   font-family: 'Poppins';
   box-sizing: border-box;
 }
+
+
+@keyframes move-lr {
+  0%{
+    width:0%;
+  }
+  100%{
+    width: 100%;
+  }
+}
