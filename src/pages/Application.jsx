@@ -44,7 +44,7 @@ function Application(props) {
           <KeypadContainer switchCollection={props.switchCollection} color={props.color} keypad={props.keypad} setKeypad={props.setKeypad}/>
           <FrameSides keypad={props.keypad}/>
           <div className='flex flex-row h-fit justify-center items-center pb-3 border p-6'>
-            <Link className='max-w-[100px] min-w-[100px] max-h-[100px] min-h-[100px] bg-green-400 flex justify-center items-center rounded-md hover:shadow-sm text-white hover:shadow-green-900' to={"/application"+urls[path-1]} onClick={() => prevPath()}>Back</Link>
+            <Link className='max-w-[100px] min-w-[100px] max-h-[100px] min-h-[100px] bg-gray-600 flex justify-center items-center hover:shadow-sm text-white hover:bg-gray-500' to={"/application"+urls[path-1]} onClick={() => prevPath()}>Back</Link>
             <Routes>
               <Route exact path="/" element={<Material keypad={props.keypad} setKeypad={props.setKeypad}/>} />
               <Route exact path="/format" element={<Format color={props.color} handleFrameSide={props.setFrameSide} keypad={props.keypad} setKeypad={props.setKeypad}/>}/>
@@ -53,7 +53,7 @@ function Application(props) {
               <Route exact path="/engraving" element={<Engraving frameSide={props.frameSide} color={props.color} keypad={props.keypad} setKeypad={props.setKeypad}/>} />
               <Route exact path="/preview" element={<ArtworkPreview keypad={props.keypad}/>} />
             </Routes>
-            <Link  className='max-w-[100px] min-w-[100px] max-h-[100px] min-h-[100px] bg-green-400 flex justify-center items-center rounded-md hover:shadow-sm text-white hover:shadow-green-900 disabled:bg-gray-600' to={"/application"+urls[path+1]} onClick={() => nextPath()}>Next</Link>
+            <Link  className='max-w-[100px] min-w-[100px] max-h-[100px] min-h-[100px] bg-gray-600 flex justify-center items-center hover:shadow-sm text-white hover:bg-gray-500' to={"/application"+urls[path+1]} onClick={() => nextPath()}>Next</Link>
           </div>
       </div>
     </>
