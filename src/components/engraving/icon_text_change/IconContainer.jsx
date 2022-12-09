@@ -1,6 +1,4 @@
 import React, {useState} from 'react'
-import { getIconCategories } from '../../../utils/utils'
-import IconCategories from './IconCategories'
 import CatIcon from './CatIcon'
 
 const IconContainer = (props) => {
